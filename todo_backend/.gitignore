@@ -1,2 +1,15 @@
-env
+# Virtual environment
+env/
+venv/
+
+# Django
+*.sqlite3
+db.sqlite3
 todo_project/db.sqlite3
+
+# Python
+__pycache__/
+*.pyc
+
+# Env files
+.env
