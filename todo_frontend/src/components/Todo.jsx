@@ -63,9 +63,9 @@ const Todo = () => {
   useEffect(() => {
     fetchTodo();
   }, []);
-  
+
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-100 flex py-4 justify-center">
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Todo App
@@ -87,7 +87,7 @@ const Todo = () => {
             onChange={(e) => setDescription(e.target.value)}
           />
           <button
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer"
             type="submit"
             disabled={isLoading}
           >
@@ -123,14 +123,14 @@ const Todo = () => {
               <div className="flex gap-2">
                 <button
                   onClick={() => toggleComplete(todo, todo.id)}
-                  className="text-sm text-green-600 hover:underline"
+                  className="text-sm text-green-600 hover:underline cursor-pointer"
                 >
                   {todo.is_completed ? "Undo" : "Done"}
                 </button>
 
                 <button
                   onClick={() => deleteTodo(todo.id)}
-                  className="text-sm text-red-600 hover:underline"
+                  className="text-sm text-red-600 hover:underline cursor-pointer"
                 >
                   Delete
                 </button>
