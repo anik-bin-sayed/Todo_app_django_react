@@ -3,6 +3,6 @@
 ## Installation
 
 1. Project clone:
-intall requirements file : pip install -r requirements.txt
-```bash
-git clone https://github.com/yourusername/project-name.git
+install requirements file : pip install -r requirements.txt
+
+git clone https://github.com/anik-bin-sayed/Todo_app_django_react
